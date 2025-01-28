@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: b476015b728b58e47b2947382de03c61
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: SkamyaAction
+    second: {fileID: 7400000, guid: 6a24b173720646144b86793c914db7c2, type: 2}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: cc45016b844e7624dae3aec10fb443ea, type: 3}
+  reverseAxis: 0
+  renderPipeline: 0
