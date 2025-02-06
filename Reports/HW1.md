@@ -8,7 +8,7 @@ The report source can be found at [GitHub Repo](https://github.com/LocalT0aster/
 
 ![Screenshot](HW1.png)
 
-### 8
+### 7-8
 
 ```cs
 using System.Collections;
@@ -34,9 +34,13 @@ public class Player : MonoBehaviour {
     [SerializeField]
     private Vector3 maxXYZ = new(45f, 4f, 45f);
 
-    // Link Position to transform.position because the GameObject already have dedicated field for this.
+    // Link Position to transform.position because
+    // the GameObject already have dedicated field for this.
     [Unity.VisualScripting.DoNotSerialize]
-    public Vector3 Position { get => transform.position; set => transform.position = value; }
+    public Vector3 Position {
+        get => transform.position;
+        set => transform.position = value;
+    }
 
     void Start() {
         timerCoroutine = StartCoroutine(RunEveryNSeconds());
@@ -53,7 +57,8 @@ public class Player : MonoBehaviour {
     private void updateHealth(int delta) {
         health -= delta;
         if (health < 0) {
-            Debug.Log(string.Format("Player Died after {0:#.000000} ingame seconds", stopwatch));
+            Debug.Log(string.Format(
+            "Player Died after {0:#.000000} ingame seconds", stopwatch));
             isAlive = false;
             StopCoroutine(timerCoroutine);
         }
